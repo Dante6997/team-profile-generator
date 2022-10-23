@@ -1,4 +1,3 @@
-const { default: test } = require('node:test');
 const Intern = require('../lib/Intern');
 const intern = new Intern('Tyron', '3', 'tyron@yahoo.com', 'Buffalo State');
 
