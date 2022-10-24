@@ -12,6 +12,6 @@ test('gets the name, id, email, officeNumber, and role', () => {
     expect(manager.getName()).toBe('Brandon');
     expect(manager.getId()).toBe('4');
     expect(manager.getEmail()).toBe('brandon@yahoo.com');
-    expect(manager.getOfficenumber()).toBe('555');
-    expected(manager.getRole()).toBe('Manager');
+    expect(manager.getOfficeNumber()).toBe('555');
+    expect(manager.getRole()).toBe('Manager');
 });

@@ -5,10 +5,10 @@ test('creates intern object', () => {
     expect(intern.name).toBe('Tyron');
     expect(intern.id).toEqual('3');
     expect(intern.email).toBe('tyron@yahoo.com');
-    expect(intern.school).toBe('Bufalo State');
+    expect(intern.school).toBe('Buffalo State');
 });
 
 test('gets school and role from get method' , () => {
-    expect(intern.getSchool()).toBe('Bufalo State');
-    expect(intern.getRole()).toBe('intern');
+    expect(intern.getSchool()).toBe('Buffalo State');
+    expect(intern.getRole()).toBe('Intern');
 });
