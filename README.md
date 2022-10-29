@@ -10,4 +10,4 @@ https://www.youtube.com/watch?v=31LhQkLcZvE&t=476s
 https://www.youtube.com/watch?v=bJY3KfM77pc&t=387s
 
 #Link to Walkthrough
-* https://drive.google.com/file/d/1pE5XEEfSrpc2LJ906POuj-EvJuLpLCFU/view or 
+* https://drive.google.com/file/d/1pE5XEEfSrpc2LJ906POuj-EvJuLpLCFU/view
