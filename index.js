@@ -4,7 +4,7 @@ const path = require('path');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
-const generateMarkdown = require("./src/generate-markdown.js");
+const generateMarkdown = require('./src/generate-markdown.js');
 const OUTPUT_DIR = path.resolve(__dirname, 'product');
 const productPath = path.join(OUTPUT_DIR, 'build.html');
 const teamBuild = [];
@@ -69,7 +69,7 @@ const questionsPrompt = () => {
                 internPrompt();
                 break;
             default:
-                team();
+                teamFinal();
 
         }
     });
@@ -153,14 +153,18 @@ const engineerIntern = () => {
     })
 };
 
-const team = () => {
+const teamFinal = () => {
     console.log('Done building team!');
 
     if(!fs.existsSync(OUTPUT_DIR)) {
         fs.mkdirSync(OUTPUT_DIR)
     }
 
-    fs.writeFile(productPath, generateMarkdown(teamBuild), 'utf-8');
+    fs.writeFile(productPath, generateMarkdown(teamBuild), (err) => {
+        if(err) {
+            return console.log(err)
+        }
+    });
 };
 
 managerPrompt();
